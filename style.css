@@ -1,0 +1,156 @@
+ @font-face {
+            font-family: matterlight;
+            src: url(./fonts/matter-light.ttf);
+        }
+
+        @font-face {
+            font-family: robotoflex;
+            src: url(./fonts/roboto-flex-variable-full.ttf);
+        }
+
+        @font-face {
+            font-family: matterregular;
+            src: url(./fonts/matter-regular.ttf);
+        }
+          @font-face {
+            font-family: alien;
+            src: url(./fonts/KFOmCnqEu92Fr1Mu4mxK.ttf);
+        }
+
+        /* Other CSS styles */
+        body {
+            overflow-x: hidden;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #herotext {
+            font-stretch: ultra-expanded;
+        }
+
+        #face {
+            transform: translateY(-1);
+        }
+
+        #contactcircle {
+            animation: spin 20s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(360deg);
+            }
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+
+        #workbtn {
+            display: inline-block;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            color: black; /* Default text color */
+        }
+
+        #workbtn::after {
+            content: '';
+            border-radius: 125px;
+            background-color: black;
+            width: 100%;
+            height: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: height 0.3s ease;
+            z-index: -1;
+        }
+
+        #workbtn:hover::after {
+            height: 100%;
+        }
+
+        #workbtn:hover {
+            color: white; /* Text color on hover */
+        }
+
+        
+div.scrollmenu {
+  background-color: white;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-top: 100px;
+  padding-left: 175px;
+
+  transition: 0.3s;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+ 
+}
+
+    div.scrollmenu::-webkit-scrollbar {
+        opacity: 5; /* Chrome, Safari, and Opera */
+    }
+
+.stretch-effect {
+        transform: translateX(-100); /* Adjust the scale value for the stretch effect */
+    }
+
+    /* rotated animatriom */
+    #rotatedscroller{
+        transform: translateX(500);
+    }
+
+
+    #rotv {
+    border-radius: 50%;
+}
+
+        
+div.scrollmenu2 {
+  background-color: purple;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-top: 100px;
+  padding-left: 175px;
+
+  transition: 0.3s;
+}
+
+div.scrollmenu2 a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+ 
+}
+
+    div.scrollmenu2::-webkit-scrollbar {
+        opacity: 5; /* Chrome, Safari, and Opera */
+    }
+    /* moving animation on hover on social media icons */
+
+.smtext{
+    animation: move 5s linear infinite;
+}
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-300px);
+    }
+}

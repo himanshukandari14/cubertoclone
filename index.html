@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuberto himanshu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+
+<script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script defer src="app.js"></script> <!-- Your custom application code -->
+
+
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="h-[100vh] w-[100vw] ">
+        <nav class=" h-[70px] w-full flex justify-between items-center px-12 bg-white">
+            <div><h1 id="logo" class="text-[30px] font-[matterlight font-semibold">cuberto</h1></div>
+            <div class="flex justify-center items-center gap-10">
+                <h1 data-cursor-text="menu" class="text-[22px] font-[matterlight]" >menu</h1>
+                <div id="menu" data-cursor-stick class="hover:bg-black rounded-full px-5 py-5"><img id="blackmenu" src="./assets/icons8-menu-35.png"> <img class="hidden" id="whitemenu" src="./assets/icons8-menu-35 (1).png"></div>
+            </div>
+        </nav>
+        <!-- hero-section -->
+        <div id="herotext" class="h-[calc(100vh-130px)]  w-full pl-[10%] flex">
+           <!-- left -->
+           <div id="leftsidenav" class="w-[90%] h-full">
+             <h1 class="font-[robotoflex] text-[138px] font-[100]"><span>We </span><span class="italic font-extralight text-[120px]">develop</span>
+                <div class="flex items-center gap-x-4">
+                    <video id="v1" class="rounded-3xl" src="./assets/1.mp4" autoplay loop muted  height="150px" width="150px"></video>
+                     digital products  </div>from scratch</h1>
+           </div>
+           <!-- right -->
+           <div class=" w-[20%] h-full  justify-center items-end" >
+            <div class="fixed bottom-[1%] right-[2%] z-50" data-cursor-stick ><img id="contactcircle" src="./assets/contact circleface.svg" height="150" width="150">
+                <video class="rounded-full h-[100px] absolute  bottom-[15%] right-[15%]" src="./assets/face.mp4" autoplay loop muted></video>
+            </div>
+           </div>   
+        </div>
+        <div class=" h-[100vh] w-[100vw]">
+            <video src="./assets/mvideo1.mp4" autoplay loop muted class="object-cover"></video>
+        </div>
+        <br><br><br>
+        <!-- c rocks -->
+       <div class=" h-[100vh] w-[100vw] flex">
+            <!-- left -->
+            <div class=" h-full w-[50%]  flex justify-center items-center">
+                <video src="./assets/c.mp4" autoplay loop muted class="object-cover"></video>
+            </div>
+            <div class="h-full w-[50%] flex flex-col justify-center items-center text-[40px] font-[matterregular] px-24 gap-y-14">
+                <p class="text-le">Cuberto is a leading digital product agency focused on branding, UI/UX design, mobile, and web development.</p>
+                <div id="btndiv" class="relative"><button id="workbtn" class="border-2 px-[180px] py-[90px] rounded-[150px] border-[gray] absolute bg-white z-10 ">How we work</button>
+                </div>
+            </div>
+        </div>
+       <!-- featured projects and much more-->
+       <div class="bg-[#161616]  border-t-2 rounded-t-[120px]">
+        <div class="px-[12%]">
+            <div class="text-[180px] text-white">
+            <h1 class="font-[matterlight]">Featured</h1>
+            <h1 class="flex  items-center gap-x-6 font-[matterlight] italic font-extralight"><span class="flexjustify-center items-center"><video autoplay muted loop class="object-cover rounded-[150px]" src="./assets/puppet.mp4" style="height: 190px; width: 280px;"></video></span>projects</h1>
+        </div>
+        <!-- cards main -->
+        <div class="flex h-full w-full">
+            <!-- left -->
+        <div class=" h-full w-[40%] ">
+            <!-- cards -->
+            <div id="cardhub" class="rounded-[1px] flex gap-y-20 flex-col font-[matterregular] text-white">
+                <!-- c1 -->
+                <div class="card" data-cursor-text="Explore">
+                    <video  muted loop class="object-cover rounded-[28px]" src="./assets/card1.mp4" style="height: 750px; width: 650px;"></video>
+                <h1 class="text-[35px] ">Punta Pago</h1>
+                </div>
+                <!-- c2 -->
+                <div class="card" data-cursor-text="Explore">
+                    <video  muted loop class="object-cover rounded-[28px]" src="./assets/v2real.mp4" style="height: 590px; width: 650px;"></video>
+                <h1 class="text-[35px] ">Riyadh</h1>
+                </div>
+
+                 <!-- c3 -->
+                <div class="card" data-cursor-text="Explore">
+                    <video  muted loop class="object-cover rounded-[28px]" src="./assets/card3.mp4" style="height: 750px; width: 650px;"></video>
+                <h1 class="text-[35px] ">Qvino</h1>
+                </div>
+
+                  <!-- c4 -->
+                <div class="card" data-cursor-text="Explore">
+                    <video  muted loop class="object-cover rounded-[28px]" src="./assets/card4.mp4" style="height: 590px; width: 650px;"></video>
+                <h1 class="text-[35px] ">Potion</h1>
+                </div>
+
+                  <!-- c5 -->
+                <div class="card" data-cursor-text="Explore">
+                    <video  muted loop class="object-cover rounded-[28px]" src="./assets/card5.mp4" style="height: 590px; width: 650px;"></video>
+                <h1 class="text-[35px] ">Ferrumpipe</h1>
+                </div>
+            </div>
+        </div>
+         <!-- right -->
+       <div class="h-full w-[60%] flex flex-col justify-center items-center py-[30%] ">
+         <div class="rounded-[1px] flex gap-y-20 flex-col font-[matterregular] text-white">
+             <!-- c6 -->
+                <div class="card2" data-cursor-text="Explore">
+                    <video muted loop class="object-cover rounded-[28px]" src="./assets/card2.mp4" style="height: 590px; width: 610px;"></video>
+                <h1 class="text-[35px] ">Flipaklip</h1>
+                </div>
+                <!-- c7 -->
+        
+                <div class="card2" data-cursor-text="Explore">
+                    <video  muted loop class="object-cover rounded-[28px]" src="./assets/card7.mp4" style="height: 750px; width: 650px;"></video>
+                <h1 class="text-[35px] ">Zelt</h1>
+                </div>
+
+                <!-- c8 -->
+                <div class="card2" data-cursor-text="Explore">
+                    <video  muted loop class="object-cover rounded-[28px]" src="./assets/card8.mp4" style="height: 590px; width: 610px;"></video>
+                <h1 class="text-[35px] ">Cisco</h1>
+                </div>
+
+                  <!-- c7 -->
+        
+                <div class="card2" data-cursor-text="Explore">
+                    <video   muted loop class="object-cover rounded-[28px]" src="./assets/card9.mp4" style="height: 750px; width: 650px;"></video>
+                <h1 class="text-[35px] ">Magma</h1>
+                </div>
+         </div>
+       </div>
+        </div>
+        </div>
+        <!-- bubbble atoms page -->
+        <div class="  border-t-2 rounded-t-[120px] flex  justify-center items-center bg-white">
+            <!-- box -->
+            <div class=" h-full w-[80%] text-[200px] bg-white">
+               <!-- head -->
+               <div id="atomhead"  class="">
+                <h1 class="font-[matterregular]">Our</h1>
+                <h1 class="font-[matterlight] "><i>philiosphy</i></h1>
+               </div>
+               <!-- main -->
+               <div class="flex">
+                <!-- left -->
+               <div class=" h-full w-[50%]">
+                <video src="./assets/atom.mp4" autoplay muted loop></video>
+               </div>
+               <!-- right -->
+                <div  class=" h-full w-[50%] mx-auto my-auto px-[5%]">
+                    <p id="atomp"  class="text-[32px] font-[matterregular]">In our team, developers work alongside designers, strategists and analysts. Cuberto doesn't do cookie-cutter solutions and we build products exactly as they were during the design phase, no short cuts or simplifications. <br> <br>  
+
+We're driven by user‑centered design that drives productivity and increases revenue. Our expertise and ingenuity are remarkable, yet we always strive to outdo and outperform our previous achievements.</p>
+                </div>
+               </div>
+        </div>
+        
+       </div>
+       <!-- development and design -->
+       <div class=" border-t-4   rounded-t-[125px] bg-[#161616]">
+     <div class=" px-[175px] text-white">
+         <h1 class="font-[matterregular] text-[160px]">Development</h1>
+      <h1 class="font-[matterregular] text-[160px]">and design</h1>
+      <h1 class="font-[matterlight] text-[160px] italic">resources</h1>
+     </div>
+     <!-- slider -->
+  <div class="scrollmenu" style="height: 560px;" data-cursor-text="Drag">
+  <a href=""><img src="./assets/slide1.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s2.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s3.jpg" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s4.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s5.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s6.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s7.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s8.png" width="650" class="rounded-3xl"></a>
+   <a href=""><img src="./assets/s9.png" width="650" class="rounded-3xl"></a>
+</div>
+<!-- slider end -->
+<div class=" text-[35px] font-[matterregular] text-white  flex justify-end pr-[20%] py-[10%]">
+    <div class=" w-[35%] flex flex-col gap-y-8 justify-center ">
+        <p>We regularly release design courses, offer advice to newbie designers, walk you through creating awesome effects, and share source files.</p>
+         <div id="btndiv" class="relative text-[20px]"><button id="workbtn" class="border-2 px-[120px] py-[20px] rounded-[150px] border-[gray] absolute bg-white z-10 ">VIEW ALL RESOURCES </button>
+    </div>
+</div>
+       </div> <!-- black end -->
+
+       <!-- slide effect gsap -->
+       <div id="" class=" whitespace-nowrap bg-white ">
+    <div id="rotatedscroller" class="flex text-[300px] object-cover bg-white">
+        <video class="rounded-full rotv" height="150" width="300" src="./assets/rotate.mp4" loop muted autoplay></video>
+        <h1>New Day-New lnspp.</h1>
+        <video class="rounded-full rotv" height="150" width="300" src="./assets/rotate.mp4" loop muted autoplay></video>
+        <h1>New Day-New lnspp.</h1>
+    </div>
+       <!-- slider -->
+  <div class="scrollmenu2" style="height: 560px;" data-cursor-text="Drag">
+    <div class="slider">
+       <a href=""><img src="./assets/slide1.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s2.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s3.jpg" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s4.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s5.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s6.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s7.png" width="650" class="rounded-3xl"></a>
+  <a href=""><img src="./assets/s8.png" width="650" class="rounded-3xl"></a>
+   <a href=""><img src="./assets/s9.png" width="650" class="rounded-3xl"></a>
+    </div>
+    
+</div>
+    <div id="rotatedscroller2" class="flex text-[300px] object-cover bg-black text-white justify-center items-center gap-x-8 relative">
+        <img src="./assets/" alt="">
+        <video class=" rotv" height="150" width="300" src="./assets/c2.mp4" loop muted autoplay></video>
+        <h1 class="bg-black">Follow us</h1>
+        <video class="rounded-full rotv" height="150" width="300" src="./assets/c2.mp4" loop muted autoplay></video>
+        <h1 class="bg-black">Follow us</h1>
+        <video class="rounded-full rotv" height="150" width="300" src="./assets/c2.mp4" loop muted autoplay></video>
+        <h1 class="bg-black">Follow us</h1>
+    </div>
+       
+ 
+</div>
+ <!-- social media handles -->
+<div class="py-[3.5%] bg-black flex items-center border-b-2 border-[#424242]">
+    <h1 class="text-white text-[22px] pl-[7%]">SOCIAL MEDIA AND CONTACTS</h1>
+    
+</div>
+<!-- all social media links -->
+<div class="flex flex-col">
+    <div class="font-[matterregular] text-[39px] relative smbox ">
+   <div class="bg-black flex absolute justify-between items-center px-[7%] w-full py-[2%] z-10 smnormal">
+    <h1 class="text-[39px] text-white">Instagram</h1>
+    <img src="./assets/icons8-right-arrow-50.png" alt="">
+   </div>
+   <!-- hover -->
+   <div class="absolute z-30 bg-white w-full px-[7%] py-[2%] gap-x-[10%]  smhover hidden">
+   <!-- text -->
+   <div class="smtext flex gap-x-[5.5%]">
+    <div class=" flex gap-x-[2.5%]">
+     <h1>Instagram</h1>
+    <img src="./assets/icons8-right-arrow-50 (1).png" alt="">
+   </div>
+
+   <div class=" flex gap-x-[2.5%]">
+     <h1>Instagram</h1>
+    <img src="./assets/icons8-right-arrow-50 (1).png" alt="">
+   </div>
+
+   <div class=" flex gap-x-[2.5%]">
+     <h1>Instagram</h1>
+    <img src="./assets/icons8-right-arrow-50 (1).png" alt="">
+   </div>
+
+
+   <div class=" flex gap-x-[2.5%]">
+     <h1>Instagram</h1>
+    <img src="./assets/icons8-right-arrow-50 (1).png" alt="">
+   </div>
+
+   <div class=" flex gap-x-[2.5%]">
+     <h1>Instagram</h1>
+    <img src="./assets/icons8-right-arrow-50 (1).png" alt="">
+   </div>
+
+
+   <div class=" flex gap-x-[2.5%]">
+     <h1>Instagram</h1>
+    <img src="./assets/icons8-right-arrow-50 (1).png" alt="">
+   </div>
+
+   <div class=" flex gap-x-[2.5%]">
+     <h1>Instagram</h1>
+    <img src="./assets/icons8-right-arrow-50 (1).png" alt="">
+   </div>
+   </div>
+   </div>
+</div>
+<!--  -->
+</div>
+    
+
+
+    </div>
+</body>
+</html>
